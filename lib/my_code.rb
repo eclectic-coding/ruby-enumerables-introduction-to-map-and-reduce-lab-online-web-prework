@@ -21,16 +21,17 @@ end
 
 # Reducing 
 def reduce_to_all_true(source_array) 
-  i = 0
-  while i < source_array.length do 
-    if (source_array[i] == true )
-      return true
-    else
-      source_array[i] == true
-    end
-    i += 1
-  end
-  return false
+  # i = 0
+  # while i < source_array.length do 
+  #   if (source_array[i] == true )
+  #     return true
+  #   else
+  #     source_array[i] == true
+  #   end
+  #   i += 1
+  # end
+  # return false
+  source_array.all?{|n|}
 end
 
 # Reducing 
